@@ -1,1 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap");
+
+:root {
+  color-scheme: light;
+  --bg-gradient: linear-gradient(400deg, hsl(0, 100%, 70%),hsl(240, 100%, 70%));
+  --card-bg: hsl(0,50%,100%);
+  --card-border: rgba(255, 255, 255, 0.4);
+  --text-primary: #2f1b3c;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-image: var(--bg-gradient);
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: var(--text-primary);
+}
+
+.hero {
+  width: min(90vw, 800px);
+}
+
+.welcome-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: clamp(1.5rem, 5vw, 2.5rem);
+  box-shadow: 0 15px 40px rgba(47, 27, 60, 0.25);
+  text-align: center;
+}
+
+.welcome-card h1 {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
+  margin: 0 0 1rem;
+}
+
+.welcome-card p {
+  margin: 0;
+  line-height: 1.6;
+}
 /* Start coding here */
